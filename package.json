@@ -1,0 +1,26 @@
+{
+  "name": "auth-fake-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "nodemonConfig": {
+    "ext": "js",
+    "ignore": [
+      "db.json"
+    ],
+    "delay": "2"
+  },
+  "keywords": [],
+  "author": "an4morph",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0",
+    "nodemon": "^2.0.4",
+    "shortid": "^2.2.15"
+  }
+}
