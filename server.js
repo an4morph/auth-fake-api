@@ -18,7 +18,6 @@ app.use(express.json())
 
 app.get('/data', (req, res) => {
   const token = req.get('X-Auth')
-  console.log('data', token)
   const isAuth = db.get('users').find({ token }).value()
   if (!isAuth) return error(res, 403, 'Access is denied')
 
